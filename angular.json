@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spies"
+    }
+  },
+  "defaultProject": "spies",
+  "cli": {
+    "analytics": false
+  }
 }
