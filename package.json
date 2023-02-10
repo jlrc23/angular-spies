@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "mocha": "ng test --karmaConfig=mocha-karma.conf.js ",
+    "mocha2": "ng run spies:mocha",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

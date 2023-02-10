@@ -21,7 +21,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-      jasmineHtmlReporter: {
+    jasmineHtmlReporter: {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
@@ -40,12 +40,12 @@ module.exports = function (config) {
         }
       }
     },
-    reporters: ['mocha', 'progress', 'kjhtml'],
+    reporters: ['mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     singleRun: false,
     restartOnFileChange: true
   });
