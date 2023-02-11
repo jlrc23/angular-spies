@@ -97,6 +97,26 @@
             "scripts": []
           }
         },
+        "mocha": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "mocha-karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "reporters": ["mocha"],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "browsers": "ChromeHeadless",
+            "codeCoverage": true
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -123,6 +143,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spies"
+    }
+  },
+  "defaultProject": "spies",
+  "cli": {
+    "analytics": false
+  }
 }
