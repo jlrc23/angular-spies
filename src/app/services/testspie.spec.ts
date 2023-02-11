@@ -13,6 +13,6 @@ describe('A Spy', function(){
     });
     it('How many called', ()=>{
         expect(foo.setBar).toHaveBeenCalledTimes(1);
-    })
+    });
 
 })
